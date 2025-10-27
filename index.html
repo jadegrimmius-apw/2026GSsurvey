@@ -35,7 +35,7 @@
                 <li>Build excellence</li>
             </ul>
         </header>
-        <!-- END INTRODUCTORY SECTION --><h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">2026 Priority Allocation Survey</h1>
+        <!-- END INTRODUCTORY SECTION --><h1 class="text-2xl font-bold text-gray-800 mb-4 text-center">APW 2026 Growth & Strategy: Priorities</h1>
         
         <!-- Name Question - Now REQUIRED --><div class="mb-6">
             <label for="name-input" class="block text-md font-semibold text-gray-700 mb-2">
@@ -147,17 +147,17 @@
 
                 // 3. Update Constant Sum Validation Message (and color total)
                 if (isSumValid) {
-                    validationMessageEl.textContent = 'Total is exactly 100!';
+                    validationMessageEl.textContent = 'TOTAL: 100!';
                     validationMessageEl.className = 'text-center mt-2 text-sm font-medium text-green-600';
                     totalPointsEl.className = 'text-lg font-bold text-green-600';
                 } else if (total > 100) {
-                    validationMessageEl.textContent = `Total is ${total}. Please reduce by ${total - 100}.`;
+                    validationMessageEl.textContent = `TOTAL: ${total}. Please reduce by ${total - 100}.`;
                     validationMessageEl.className = 'text-center mt-2 text-sm font-medium text-red-600';
                     totalPointsEl.className = 'text-lg font-bold text-red-600';
                 } else {
-                    validationMessageEl.textContent = `Total is ${total}. Please add ${100 - total} more.`;
-                    validationMessageEl.className = 'text-center mt-2 text-sm font-medium text-yellow-600';
-                    totalPointsEl.className = 'text-lg font-bold text-yellow-600';
+                    validationMessageEl.textContent = `TOTAL: ${total}. Please add ${100 - total} more.`;
+                    validationMessageEl.className = 'text-center mt-2 text-sm font-medium text-red-600';
+                    totalPointsEl.className = 'text-lg font-bold text-red-600';
                 }
 
                 // 4. Update Submit Button state
